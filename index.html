@@ -5,8 +5,139 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
+<style>
+   body {
+    padding: 100px;
+  }
+
+.container div {
+    display: inline-block;
+    width: 70px;
+    height: 60px;
+    border: 1px solid black;
+    font-size:1rem;
+}
+
+div {
+    display: block;
+    position: relative;
+}
+
+.container :nth-child(2n) {
+    border-color: red;
+}
+
+
+.v1 :nth-child(2n) {
+    color: lightgreen;
+}
+
+.v2 span:last-of-type {
+    color: blue;
+}
+
+.v4 span:not( :last-of-type) {
+    color: yellow;
+}
+
+span:nth-child(4n+1) {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    
+}
+
+span:nth-child(3n-1) {
+    position: absolute;
+    bottom: 60px;
+    left: 30px;
+}
+
+.v6 span:last-of-type {
+    position: absolute;
+    left: 75px;
+    top: 20px;
+}
+
+.v11 span:last-of-type {
+    position: absolute;
+    right: 75px;
+    top: 20px;
+}
+
+.container  {
+
+    font-size:0;
+  }
+</style>
 </head>
 <body>
     
+    <div class="container">
+
+ <div class="v1 v11">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v2">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v1">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v3">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v1">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v4">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v1">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v5">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v1">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+ <div class="v6">
+    <span>A</span>
+    <span>B</span>
+    <span>C</span>
+    <span>D</span>
+ </div>
+
+    </div>
+
 </body>
 </html>
